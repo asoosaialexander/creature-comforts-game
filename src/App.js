@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import ImprovementCard from "./components/ImprovementCard";
+import { Resource } from "./shared/constants";
 
 function App() {
+  const details={
+    comfort:2,
+    title:"Wheelbarrow",
+    cost:[
+      Resource.Wood,
+      Resource.Wood,
+      Resource.Stone
+    ],
+    image: "",
+    text:"Gain 1 Wheelbarrow token. Each turn you may send it with a worker to the Valley or River. That worker collects 1 extra Good."
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ImprovementCard cardDetails={details} />
     </div>
   );
 }

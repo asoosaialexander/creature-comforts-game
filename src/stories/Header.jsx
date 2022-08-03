@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 
 import { Button } from './Button';
 import './header.css';
+import { Chip } from '@mui/material';
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>
+    <Chip label="Chip Filled" color="primary" />
     <div className="wrapper">
       <div>
         <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

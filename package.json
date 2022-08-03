@@ -79,6 +79,7 @@
     "msw": "^0.42.0",
     "msw-storybook-addon": "^1.6.3",
     "prop-types": "^15.8.1",
+    "storybook-addon-material-ui5": "^1.0.0",
     "webpack": "^5.73.0"
   }
 }
